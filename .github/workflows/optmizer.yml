@@ -1,8 +1,6 @@
 name: Optimizer
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'  # Runs every 30 minutes
   workflow_dispatch:  # Allows for manual deployment
 
 jobs:
