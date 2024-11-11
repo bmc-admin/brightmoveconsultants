@@ -16,10 +16,14 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.IONOS_SSH_KEY }}
 
+      - name: Check Directory Permissions
+        run: |
+          ssh -o StrictHostKeyChecking=no -p ${{ secrets.IONOS_PORT }} ${{ secrets.IONOS_USERNAME }}@${{ secrets.IONOS_HOST }} "ls -ld ~/brightmoveconsultants"
+
       - name: Clean Webspace Directory
         run: |
-          ssh -o StrictHostKeyChecking=no -p ${{ secrets.IONOS_PORT }} ${{ secrets.IONOS_USERNAME }}@${{ secrets.IONOS_HOST }} "rm -rf /brightmoveconsultants/*"
+          ssh -o StrictHostKeyChecking=no -p ${{ secrets.IONOS_PORT }} ${{ secrets.IONOS_USERNAME }}@${{ secrets.IONOS_HOST }} "rm -rf ~/brightmoveconsultants/*"
 
       - name: Upload Files to IONOS
         run: |
-          rsync -avz -e "ssh -p ${{ secrets.IONOS_PORT }}" --delete --exclude '.git/' ./site/splendid-successes-043935.framer.app/ ${{ secrets.IONOS_USERNAME }}@${{ secrets.IONOS_HOST }}:/brightmoveconsultants/
+          rsync -avz -e "ssh -p ${{ secrets.IONOS_PORT }}" --delete --exclude '.git/' ./site/splendid-successes-043935.framer.app/ ${{ secrets.IONOS_USERNAME }}@${{ secrets.IONOS_HOST }}:~/brightmoveconsultants/
