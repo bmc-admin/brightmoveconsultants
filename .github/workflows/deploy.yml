@@ -18,7 +18,7 @@ jobs:
 
       - name: Clean Webspace Directory
         run: |
-          ssh -o StrictHostKeyChecking=no -p ${{ secrets.IONOS_PORT }} ${{ secrets.IONOS_USERNAME }}@${{ secrets.IONOS_HOST }} "rm -rf brightmoveconsultants/*"
+          ssh -o StrictHostKeyChecking=no -p ${{ secrets.IONOS_PORT }} ${{ secrets.IONOS_USERNAME }}@${{ secrets.IONOS_HOST }} "rm -rf /brightmoveconsultants/*"
 
       - name: Upload Files to IONOS
         run: |
