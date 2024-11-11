@@ -1,0 +1,25 @@
+name: Deploy to IONOS
+
+on:
+  workflow_dispatch:  # Allows for manual deployment
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.IONOS_SSH_KEY }}
+
+      - name: Clean Webspace Directory
+        run: |
+          ssh -o StrictHostKeyChecking=no -p ${{ secrets.IONOS_PORT }} ${{ secrets.IONOS_USERNAME }}@${{ secrets.IONOS_HOST }} "rm -rf /brightmoveconsultants/*"
+
+      - name: Upload Files to IONOS
+        run: |
+          rsync -avz -e "ssh -p ${{ secrets.IONOS_PORT }}" --delete --exclude '.git/' ./site/splendid-successes-043935.framer.app/ ${{ secrets.IONOS_USERNAME }}@${{ secrets.IONOS_HOST }}:/brightmoveconsultants/
