@@ -1,4 +1,4 @@
-name: Update Site and Deploy to IONOS
+name: Optimizer
 
 on:
   schedule:
