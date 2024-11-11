@@ -18,6 +18,8 @@ jobs:
 
       - name: Download Framer Site
         run: |
+          # Remove 'site' directory if it exists and create a new one
+          rm -rf ./site
           mkdir site
           httrack "${{ secrets.FRAMER_SITE_URL }}" -O "./site" --disable-security-limits -%v
         env:
