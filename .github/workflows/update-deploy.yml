@@ -2,7 +2,7 @@ name: Update Site and Deploy to IONOS
 
 on:
   schedule:
-    - cron: '* * * * *'  # Runs every 30 minutes
+    - cron: '0 0 * * *'  # Runs at midnight every day
   workflow_dispatch:  # Allows for manual deployment
 
 jobs:
