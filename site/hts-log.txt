@@ -1,4 +1,4 @@
-HTTrack3.49-2+libhtsjava.so.2 launched on Mon, 11 Nov 2024 23:39:18 at https://splendid-successes-043935.framer.app/
+HTTrack3.49-2+libhtsjava.so.2 launched on Tue, 12 Nov 2024 02:39:03 at https://splendid-successes-043935.framer.app/
 (httrack https://splendid-successes-043935.framer.app/ -O ./site -%! -%v )
 
 Information, Warnings and Errors reported for this mirror:
@@ -6,8 +6,8 @@ note:	the hts-log.txt file, and hts-cache folder, may contain sensitive informat
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-23:39:18	Warning: 	* security warning: !!! BYPASSING SECURITY LIMITS - MONITOR THIS SESSION WITH EXTREME CARE !!!
-23:39:39	Error: 	"Not Found" (404) at link https://splendid-successes-043935.framer.app/[object Object] (from https://splendid-successes-043935.framer.app/)
+02:39:03	Warning: 	* security warning: !!! BYPASSING SECURITY LIMITS - MONITOR THIS SESSION WITH EXTREME CARE !!!
+02:39:24	Error: 	"Not Found" (404) at link https://splendid-successes-043935.framer.app/[object Object] (from https://splendid-successes-043935.framer.app/)
 
-HTTrack Website Copier/3.49-2 mirror complete in 43 seconds : 43 links scanned, 41 files written (9453485 bytes overall) [1078154 bytes received at 25073 bytes/sec], 9453594 bytes transferred using HTTP compression in 42 files, ratio 11%
+HTTrack Website Copier/3.49-2 mirror complete in 43 seconds : 43 links scanned, 41 files written (9453485 bytes overall) [1078318 bytes received at 25077 bytes/sec], 9453594 bytes transferred using HTTP compression in 42 files, ratio 11%
 (1 errors, 1 warnings, 0 messages)
