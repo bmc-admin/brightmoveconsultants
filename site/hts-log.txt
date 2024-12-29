@@ -1,4 +1,4 @@
-HTTrack3.49-5 launched on Sat, 28 Dec 2024 01:20:48 at https://splendid-successes-043935.framer.app/
+HTTrack3.49-5 launched on Sun, 29 Dec 2024 00:55:51 at https://splendid-successes-043935.framer.app/
 (httrack https://splendid-successes-043935.framer.app/ -O ./site -%! -%v )
 
 Information, Warnings and Errors reported for this mirror:
@@ -6,7 +6,7 @@ note:	the hts-log.txt file, and hts-cache folder, may contain sensitive informat
 	such as username/password authentication for websites mirrored in this project
 	do not share these files/folders if you want these information to remain private
 
-01:20:48	Warning: 	* security warning: !!! BYPASSING SECURITY LIMITS - MONITOR THIS SESSION WITH EXTREME CARE !!!
+00:55:51	Warning: 	* security warning: !!! BYPASSING SECURITY LIMITS - MONITOR THIS SESSION WITH EXTREME CARE !!!
 
 HTTrack Website Copier/3.49-5 mirror complete in 2 seconds : 2 links scanned, 1 files written (144578 bytes overall) [20804 bytes received at 10402 bytes/sec], 144687 bytes transferred using HTTP compression in 2 files, ratio 13%
 (No errors, 1 warnings, 0 messages)
